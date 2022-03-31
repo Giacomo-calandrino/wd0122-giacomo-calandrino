@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+    background-image: url(../img/sfondo.png);
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    border: 50px;
+    margin: 20px;
+    background-color: rgb(25, 144, 170);
+}
+
+header li {
+    list-style-type: none;
+}
+
+header li::after {
+    content: '<=';
+    color: white;
+}
+
+header li::before {
+    content: '=>';
+    color: white;
+}
+
+header p {
+    color: white;
+    padding: 20px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header nav a {
+    color: white;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 50px;
+    border: 50px;
+    margin: 20px;
+    background-color: white;
+}
+
+h1 {
+    padding: 30px 0px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+article p:first-of-type {
+    color: grey;
+}
+
+article p strong {
+    font-weight: bold;
+    color: blueviolet;
+}
+
+article ul, ol {
+    padding-bottom: 20px;
+}
+
+article ul code {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+table caption {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+th {
+    padding: 20px;
+    background-color: rgb(84, 84, 177);
+    color: white;
+    border: 1px solid white;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+}
+
+.grigio {
+    background-color: lightgrey;
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+section {
+    background-color: lightgrey;
+    margin: 20px;
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    padding-bottom: 20px;
+}
+
+button {
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+}
+
+aside h2 {
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin: 20px;
+}
+
+aside div {
+    background-color: lightgrey;
+    margin: 20px;
+    padding: 20px;
+}
+
+.data {
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    border: 50px;
+    margin: 20px;
+    background-color: rgb(25, 144, 170);
+    color: white;
+}
+
+address a {
+    color: blueviolet;
+}

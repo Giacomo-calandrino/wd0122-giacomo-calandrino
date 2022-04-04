@@ -1,0 +1,43 @@
+@media (min-width:320px) {
+
+    table {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .tabella {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    iframe {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width:768px) {
+
+    iframe {
+        height: 40rem;
+    }
+
+    table {
+        width: 50rem;
+    }
+}
+
+@media print {
+
+    header, iframe, section, aside, footer {
+        display: none; 
+    }
+    
+    main {
+        box-shadow: none;
+    }
+
+    .social, .toTop {
+        display: none;
+    }
+}

@@ -1,0 +1,45 @@
+.container {
+    background-color: rgb(105, 96, 96);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 300px;
+    padding: 60px;
+    gap: 60px 30px;
+}
+#post {
+    box-shadow: 5px 5px;
+}
+#post:hover {
+    transform: rotate(0deg);
+    transform: scale(1, 1.5);
+    transition: transform 300ms ease;
+    z-index: 100;
+}
+.p1, .p5, .p7 {
+    background-image: linear-gradient(rgb(221, 221, 130), rgb(162, 162, 56));
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    font-style: italic;
+    transform: rotate(-3deg);
+}
+.p2, .p4, .p8 {
+    background-image: linear-gradient(rgb(127, 211, 127), rgb(47, 108, 47));
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    font-style: italic;
+    transform: rotate(4deg);
+}
+.p3, .p6 {
+    background-image: linear-gradient(rgb(157, 157, 235), rgb(53, 53, 135));
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    font-style: italic;
+    transform: rotate(-5deg);
+}
+div h2 {
+    font-weight: bolder;
+    padding-bottom: 10px;
+}

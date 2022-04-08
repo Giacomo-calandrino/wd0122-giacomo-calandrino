@@ -1,0 +1,59 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+}
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+}
+h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+/* HEADER */
+#menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+#apri-menu {
+    display: none;
+}
+input:checked + #menu {
+    height: 200px;
+}
+nav {
+    display: flex;
+    position: sticky;
+}
+.apri-menu {
+    position: absolute;
+    justify-content: flex-end;
+}
+/* MAIN */
+.testata {
+    background-image: url(../images/banner.jpg);
+    background-size: contain;
+    color: white;
+}
+.bottone {
+    background-image: linear-gradient(#6cc1e2, #392f7a);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+section {
+    background-color: rgb(2, 2, 94);
+    color: white;
+    padding: 5vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* FOOTER */
+
+/* RESPONSIVE */

@@ -1,0 +1,13 @@
+.titolo {
+    text-align: center;
+    background-color: brown;
+}
+.titolo h1 {
+    background-color: blue;
+}
+.titolo p {
+    color: white;
+}
+.lista {
+    background-image: linear-gradient(yellow, red,green);
+}

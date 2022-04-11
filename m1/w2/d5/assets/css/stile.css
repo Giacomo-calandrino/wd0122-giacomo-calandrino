@@ -2,58 +2,90 @@
 body {
     font-family: 'Fira Sans', sans-serif;
     line-height: 1.8;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #000;
-    text-align: center;
 }
+
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1;
 }
+
 h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 1.1;
 }
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+.lni {
+    color: red;
+}
+
 /* HEADER */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+
 #menu {
     height: 0;
     overflow: hidden;
     transition: height 0.5s;
 }
+
 #apri-menu {
     display: none;
 }
-input:checked + #menu {
+
+input:checked+#menu {
     height: 200px;
 }
-nav {
+
+header {
     display: flex;
-    position: sticky;
+    justify-content: center;
+    align-items: center;
 }
-.apri-menu {
-    position: absolute;
-    justify-content: flex-end;
-}
-/* MAIN */
-.testata {
+
+.presentazione {
+    height: 300px;
+    width: 100%;
     background-image: url(../images/banner.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
+    padding: 15px;
 }
+
+.presentazione p {
+    padding: 20px;
+}
+
+/* MAIN */
+
 .bottone {
     background-image: linear-gradient(#6cc1e2, #392f7a);
     color: white;
     text-decoration: none;
     padding: 10px;
 }
-section {
-    background-color: rgb(2, 2, 94);
-    color: white;
-    padding: 5vh;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+
+#smile {
+    margin-right: 10px;
 }
 
 /* FOOTER */
+footer {
+    background-color: lightgray;
+}
 
 /* RESPONSIVE */

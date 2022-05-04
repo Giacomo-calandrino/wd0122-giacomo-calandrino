@@ -3,24 +3,22 @@
   text-decoration: none;
   padding: 15px;
   margin: 10px;
-  background-color: #4444ee; }
-
-.btn-primary:hover {
-  background-color: white;
-  color: black;
+  background-color: #4444ee;
   transition: all 1.5s; }
+  .btn-primary:hover {
+    background-color: white;
+    color: black; }
 
 .btn-secondary {
   color: white;
   text-decoration: none;
   padding: 15px;
   margin: 10px;
-  background-color: orange; }
-
-.btn-secondary:hover {
-  background-color: white;
-  color: black;
+  background-color: orange;
   transition: all 1.5s; }
+  .btn-secondary:hover {
+    background-color: white;
+    color: black; }
 
 body {
   width: 100%;

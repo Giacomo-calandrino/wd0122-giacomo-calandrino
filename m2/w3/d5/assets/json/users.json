@@ -1,0 +1,58 @@
+[
+  {
+    "username": "john",
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "Male",
+    "profileURL": "assets/img/male.png",
+    "email": "john.doe@example.com"
+  },
+  {
+    "username": "jane",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "gender": "Female",
+    "profileURL": "assets/img/female.png",
+    "email": "jane.doe@example.com"
+  },
+  {
+    "username": "Strawhat",
+    "firstName": "Luffy",
+    "lastName": "Monkey D.",
+    "gender": "Male",
+    "profileURL": "assets/img/luffy.png",
+    "email": "straw.hat@example.com"
+  },
+  {
+    "username": "PirateHunter",
+    "firstName": "Zoro",
+    "lastName": "Roronoa",
+    "gender": "Male",
+    "profileURL": "assets/img/zoro.png",
+    "email": "pirate.hunter@example.com"
+  },
+  {
+    "username": "DemonChild",
+    "firstName": "Robin",
+    "lastName": "Nico",
+    "gender": "Female",
+    "profileURL": "assets/img/robin.png",
+    "email": "demon.child@example.com"
+  },
+  {
+    "username": "BlackLeg",
+    "firstName": "Sanji",
+    "lastName": "Vinsmoke",
+    "gender": "Male",
+    "profileURL": "assets/img/sanji.png",
+    "email": "black.leg@example.com"
+  },
+  {
+    "username": "Sogeking",
+    "firstName": "Usopp",
+    "lastName": "God",
+    "gender": "Male",
+    "profileURL": "assets/img/usopp.png",
+    "email": "god.usopp@example.com"
+  }
+]

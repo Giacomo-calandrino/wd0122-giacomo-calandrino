@@ -1,0 +1,17 @@
+<h1>{{h1}}</h1>
+
+<h2>{{counter}}</h2>
+<p>{{count}}</p>
+<button (click)="aumenta()">Aumenta</button>
+
+<h2>{{alert}}</h2>
+<button (click)="attenzione()">NON CLICCARE</button>
+
+<h2>IF</h2>
+<p>Il numero sarà visibile solo quando diventa >= a 10</p>
+<p *ngIf="count >= 10">{{count}}</p>
+<button (click)="aumenta()">Aumenta</button>
+
+<h2>For</h2>
+<p>Verranno visualizzati tutti gli elementi dell'array</p>
+<p *ngFor="let nome of nomi">{{nome}}</p>

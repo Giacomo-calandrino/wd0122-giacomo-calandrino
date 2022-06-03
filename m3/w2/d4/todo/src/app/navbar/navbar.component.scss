@@ -1,0 +1,16 @@
+nav{
+    text-align: center;
+    font-size: larger;
+}
+
+.active{
+    pointer-events: none;
+    color: purple;
+}
+
+a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+}

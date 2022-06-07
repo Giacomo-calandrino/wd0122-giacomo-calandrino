@@ -1,0 +1,48 @@
+<div class="container">
+    <form (ngSubmit)="submit()" #f="ngForm">
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input #name="ngModel" ngModel name="name" id="name" type="name" class="form-control" required
+                placeholder="name">
+            <p [style.color]="'red'" *ngIf="name.invalid && name.touched">Campo obbligatorio</p>
+        </div>
+
+        <div class="form-group">
+            <label for="alterEgo">AlterEgo</label>
+            <input #alterEgo="ngModel" required ngModel name="alterEgo" id="alterEgo" type="password"
+                class="form-control" placeholder="alterEgo">
+            <p [style.color]="'red'" *ngIf="alterEgo.invalid && alterEgo.touched">Campo obbligatorio</p>
+        </div>
+
+        <div class="form-group">
+            <label for="power">Power</label>
+            <input #power="ngModel" required ngModel name="power" id="power" type="power" class="form-control"
+                placeholder="power">
+            <p [style.color]="'red'" *ngIf="power.invalid && power.touched">Campo obbligatorio</p>
+        </div>
+
+        <div class="form-group">
+            <label for="enemy">Enemy</label>
+            <input #enemy="ngModel" maxlength="10" ngModel name="enemy" id="enemy" type="enemy" class="form-control"
+                placeholder="enemy">
+        </div>
+
+        <div class="form-group">
+            <label for="planet">Planet</label>
+            <input #planet="ngModel" required minlength="5" ngModel name="planet" id="planet" type="planet"
+                class="form-control" placeholder="planet">
+            <p [style.color]="'red'" *ngIf="planet.invalid && planet.touched">Campo obbligatorio</p>
+            <p *ngIf="planet.value.length < 5 && planet.touched">Il pianeta deve avere minimo 5 caratteri</p>
+        </div>
+
+        <div class="form-group">
+            <label for="weakness">Weakness</label>
+            <input #weakness="ngModel" ngModel name="weakness" id="weakness" type="weakness" class="form-control"
+                placeholder="weakness">
+        </div>
+
+        <button [disabled]="f.invalid" class="btn btn-primary">Crea</button>
+        <p *ngIf="f.invalid">Compila tutti i campi per poter inviare il form</p>
+    </form>
+</div>

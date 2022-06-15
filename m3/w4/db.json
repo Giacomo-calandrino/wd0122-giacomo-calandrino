@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "email": "admin@admin.it",
+      "password": "$2a$10$Z81P.PNCbWGKzKlxfDWceOiU/7/fsuBJXHa6vBASFsaC6oTdiyFie",
+      "name": "Admin",
+      "surname": "Admin",
+      "username": "Admin",
+      "id": 3
+    },
+    {
+      "email": "ciao@ciao.it",
+      "password": "$2a$10$tmQugb10//SZLbZh7m83Ye0CKemBLUQnadD2ZeE86PEZ6.l0togHC",
+      "name": "ciao",
+      "surname": "Saunders",
+      "username": "tevyf",
+      "id": 4
+    },
+    {
+      "email": "test@test.it",
+      "password": "$2a$10$bImGmixXTFkahjd3o8cEwuuv8aZJjtOxE1.06x2u0h1HqoJqxJFMS",
+      "name": "test",
+      "surname": "Saunders",
+      "username": "tevyf",
+      "id": 5
+    },
+    {
+      "email": "woreg@mailinator.com",
+      "password": "$2a$10$VQROEYB9vlBcZAA9qbfVeOC4498c/uCRRDxtcUq6YZtWz1X9GsF2O",
+      "name": "Lev Garner",
+      "surname": "Gay",
+      "username": "wokat",
+      "id": 6
+    },
+    {
+      "email": "retero@mailinator.com",
+      "password": "$2a$10$ozhdW.wLFL1HCgmohDz52.jo84.QyxDBhf0T20OpDTM.rjCtxYpWi",
+      "name": "Debra Dickerson",
+      "surname": "Davenport",
+      "username": "vukume",
+      "id": 7
+    }
+  ],
+  "posts": [
+    {
+      "utente": "tevyf",
+      "caption": "dfb sdb dsb sbv sdbf sdb ",
+      "liked": [
+        3
+      ],
+      "date": "6/15/2022, 3:59",
+      "id": 3
+    },
+    {
+      "utente": "tevyf",
+      "caption": "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk",
+      "liked": [],
+      "date": "6/15/2022, 3:59",
+      "id": 7
+    },
+    {
+      "utente": "tevyf",
+      "caption": "Drop the likes!",
+      "liked": [
+        4,
+        3,
+        5
+      ],
+      "date": "6/15/2022, 4:09",
+      "id": 8
+    }
+  ]
+}

@@ -5,6 +5,8 @@ import {
   Injectable,
   Input,
   OnInit,
+  Output,
+  EventEmitter
 } from '@angular/core';
 import { Post } from 'src/app/interfaces/post';
 import { AuthService } from 'src/app/services/auth.service';
@@ -24,6 +26,8 @@ export class PostDetailsComponent implements OnInit {
   caption!: string;
   liked: boolean = false;
   likedArray: number[] = [];
+  @Output() deleteEmitter = new EventEmitter<number>()
+  showDots: boolean = false
 
   constructor(
     private postsSrv: PostsService,
@@ -34,6 +38,7 @@ export class PostDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.caption = this.post.caption;
     this.getLikedPosts();
+    this.isOwner()
   }
 
   modificaPost(id: number, caption: string) {
@@ -68,19 +73,26 @@ export class PostDetailsComponent implements OnInit {
   }
 
   getLikedPosts(): void {
-    if (JSON.parse(localStorage.getItem('user')!)) {
+    if (localStorage.getItem('user')) {
       const id = JSON.parse(localStorage.getItem('user')!).id;
       this.liked = this.post.liked.includes(id);
       this.postsSrv.getPost(this.post.id).subscribe((res: any) => {
-        for (let like of res.liked) {
-          this.likedArray.push(like);
-        }
+          this.likedArray = res.liked;
       });
     }
   }
 
   deletePost() {
-    this.postsSrv.deletePost(this.post.id).subscribe();
+    this.deleteEmitter.emit(this.post.id)
+  }
+
+  isOwner(){
+    if(localStorage.getItem('user')){
+      let username = JSON.parse(localStorage.getItem('user')!).username
+      if(this.post.utente === username){
+        this.showDots = !this.showDots
+      }
+    }
   }
 
   // @HostListener('document:click', ['$event.target'])
